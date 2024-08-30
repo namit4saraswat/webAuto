@@ -15,4 +15,5 @@ Given('I open Playwright documentation from Helper menu', async function(){
     await I.click(locate({ xpath: landPage.titlebar.listItem }).withText('Playwright').at(2));
     expect(await I.grabCurrentUrl()).to.equal('https://codecept.io/helpers/Playwright/')
     await tryTo(() => I.see('NJKFDNFJ'));
+    console.log('Logging URL from github secrets' + process.env.URL)
 });
