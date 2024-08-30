@@ -1,3 +1,5 @@
+const { output } = require("codeceptjs");
+
 exports.config = {
   output: './output',
   helpers: {
@@ -5,7 +7,8 @@ exports.config = {
       browser: 'chromium',
       url: 'https://codecept.io',
       show: true,
-      waitForNavigation: 'load'
+      waitForNavigation: 'load',
+      recordHar : {path: 'output.har'}
     }
   },
   multiple: {
