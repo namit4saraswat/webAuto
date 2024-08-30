@@ -1,0 +1,17 @@
+{
+  "name": "webauto",
+  "version": "1.0.0",
+  "description": "Automating several tests on ui",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "codeceptjs": "^3.6.5",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.46.1"
+  }
+}
