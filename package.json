@@ -7,7 +7,8 @@
     "test": "npx codeceptjs run",
     "tag": "npx codeceptjs run --grep $TAG",
     "tag-worker": "npx codeceptjs run-workers 5 --grep $TAG",
-    "worker": "npx codeceptjs run-workers $COUNT"
+    "worker": "npx codeceptjs run-workers $COUNT",
+    "multiBrowser": "npx codeceptjs run-multiple basic --grep $TAG"
   },
   "author": "",
   "license": "ISC",

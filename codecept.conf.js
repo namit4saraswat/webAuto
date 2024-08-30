@@ -8,6 +8,11 @@ exports.config = {
       waitForNavigation: 'load'
     }
   },
+  multiple: {
+    basic: {
+      browsers: ['chromium', 'firefox']
+    }
+  },
   include: {
     I: './steps_file.js'
   },
