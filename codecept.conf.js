@@ -1,12 +1,13 @@
 const { output } = require("codeceptjs");
 const { chromium } = require("playwright");
+require('dotenv').config();
 
 exports.config = {
   output: './output',
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'https://codecept.io',
+      url: process.env.URL,
       show: false,
       waitForNavigation: 'load',
       // recordHar : {path: 'output.har'}, Enable to record HAR per scenario

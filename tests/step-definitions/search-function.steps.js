@@ -1,6 +1,7 @@
 const { I } = inject();
 const descPage = require('../page-objects/description-page');
 const dataHelper = require('../../helper/fakeData');
+const { expect } = require('chai');
 
 Given('I list all methods including {string} validations', async function(text){
     let URLHeadersCount = await I.grabNumberOfVisibleElements(locate({css: descPage.sidebarHeading}).withText(text))
