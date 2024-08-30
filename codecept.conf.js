@@ -1,4 +1,5 @@
 const { output } = require("codeceptjs");
+const { chromium } = require("playwright");
 
 exports.config = {
   output: './output',
@@ -6,9 +7,15 @@ exports.config = {
     Playwright: {
       browser: 'chromium',
       url: 'https://codecept.io',
-      show: true,
+      show: false,
       waitForNavigation: 'load',
-      recordHar : {path: 'output.har'}
+      recordHar : {path: 'output.har'},
+      chromium: {
+        args: [
+          '--no-sandbox',
+          '--start-maximized',
+        ]
+      }
     }
   },
   multiple: {
