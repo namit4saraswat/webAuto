@@ -4,7 +4,10 @@
   "description": "Automating several tests on ui",
   "main": "index.js",
   "scripts": {
-    "test": "npx codeceptjs run"
+    "test": "npx codeceptjs run",
+    "tag": "npx codeceptjs run --grep $TAG",
+    "tag-worker": "npx codeceptjs run-workers 5 --grep $TAG",
+    "worker":  "npx codeceptjs run-workers $COUNT"
   },
   "author": "",
   "license": "ISC",
