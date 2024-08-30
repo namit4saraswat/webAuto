@@ -6,7 +6,7 @@ const tryTo = codeceptjs.container.plugins('tryTo');
 
 
 Given('I navigate to codecept documentation site', async function(){
-    await I.amOnPage('/');
+    await I.amOnPage('https://codecept.io');
 });
 
 Given('I open Playwright documentation from Helper menu', async function(){
