@@ -7,11 +7,13 @@
     "test": "npx codeceptjs run",
     "tag": "npx codeceptjs run --grep $TAG",
     "tag-worker": "npx codeceptjs run-workers 5 --grep $TAG",
-    "worker":  "npx codeceptjs run-workers $COUNT"
+    "worker": "npx codeceptjs run-workers $COUNT"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@codeceptjs/allure-legacy": "^1.0.2",
+    "allure-commandline": "^2.30.0",
     "chai": "^4.3.4",
     "codeceptjs": "^3.6.5",
     "dotenv": "^16.4.5",

@@ -38,6 +38,10 @@ exports.config = {
     eachElement: {
       enabled: true
     },
+    allure: {
+      enabled: true,
+      require: '@codeceptjs/allure-legacy',
+    },
     pauseOnFail: {}
   },
   stepTimeout: 0,
