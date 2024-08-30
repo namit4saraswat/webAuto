@@ -9,7 +9,7 @@ exports.config = {
       url: 'https://codecept.io',
       show: false,
       waitForNavigation: 'load',
-      recordHar : {path: 'output.har'},
+      // recordHar : {path: 'output.har'}, Enable to record HAR per scenario
       chromium: {
         args: [
           '--no-sandbox',

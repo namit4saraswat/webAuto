@@ -14,4 +14,8 @@ Feature: User searches a function and print description of function
         Given I open Playwright documentation from Helper menu
         Then I list all methods including "Cookie" validations
 
+    @printFakeData
+    Scenario: Print fake data test
+        Given I print fake data
+
 
